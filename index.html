@@ -1,67 +1,118 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oi nenem</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oi nenem</title>
-<style>
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://i.pinimg.com/736x/8b/3a/25/8b3a2540d36a855a9074662a7672a935.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+       
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', Helvetica, sans-serif;
+            background-image: url(https://i.pinimg.com/736x/8b/3a/25/8b3a2540d36a855a9074662a7672a935.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
 
-h1, h2 {
-    text-align: center;
-}
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 90%; 
+            margin: 0 auto;
+        }
 
-.paragraph {
-    font-weight: bold;
-    font-style: normal;
-    font-size: larger;
-    width: 80%;
-    max-width: 700px;
-    margin: 10px;
-    text-align: center;
-    height: auto;
-    overflow: visible;
-}
+       
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
 
+       
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            animation: pulse 1.5s infinite;
+        }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1); 
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.2); 
-        opacity: 0.7; 
-    }
-    100% {
-        transform: scale(1); 
-        opacity: 1;
-    }
-}
+        
+        .paragraph {
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            padding: 0 20px; 
+        }
 
-h2 {
-    margin-top: 20px;
-    animation: pulse 1.5s infinite; 
-}
-</style>
+       
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
 
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem; 
+            }
+
+            .paragraph {
+                font-size: 1rem; 
+                padding: 0 15px; 
+            }
+
+            h2 {
+                font-size: 1.2rem; 
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.2rem; 
+            }
+
+            .paragraph {
+                font-size: 0.9rem; 
+            }
+
+            h2 {
+                font-size: 1rem; 
+            }
+        }
+
+    </style>
 </head>
-
 <body>
-    
-    <div>
+
+    <div class="container">
+        <h1>Oi...</h1>
 
         <div class="paragraph">
             <p>Oi...Hoje é dia 19 - Quarta-Feira, e se tudo der certo vamos jantar Sexta, só queria te preparar algo legalzinho mas essa semana foi bem corrida pra mim, cheio de pepino pra resolver</p>
@@ -78,5 +129,6 @@ h2 {
 
         <h2>Eu te amo Tais</h2>
     </div>
+
 </body>
 </html>
